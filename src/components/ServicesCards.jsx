@@ -53,9 +53,12 @@ const services = [
 const ServicesCards = () => {
   return (
     <section
-      className="bg-white py-16 px-6" // White background with padding
+      className="bg-white py-2 px-6" // White background with padding
       aria-label="Our Services" // Accessibility: descriptive label for screen readers
     >
+        <h2 className="text-4xl font-extrabold text-black text-center mb-8">
+          Our Services 
+        </h2>
       <div
         className="
           max-w-7xl mx-auto 
