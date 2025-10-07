@@ -3,11 +3,11 @@ import { FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const linkClass = "text-sm text-black hover:text-red-600 duration-200";
+  const linkClass = "text-sm text-white hover:text-red-600 duration-200";
 
   return (
     <div className="w-full" id="footer">
-      <footer className="w-full bg-white">
+      <footer className="w-full bg-black text-white">
         <div className="container mx-auto px-4 py-16">
           {/* Footer Grid */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10"> 
@@ -19,7 +19,7 @@ const Footer = () => {
                 pest<span className="text-gray-800">Xperts</span>
               </span>
             </a>
-            <p className="text-sm text-black pt-4">
+            <p className="text-sm text-white pt-4">
               Handcrafted bamboo accessories that blend elegance with
               sustainability. Each piece tells a story of craftsmanship and
               environmental consciousness.
@@ -58,9 +58,6 @@ const Footer = () => {
                 <Link to="#" className={linkClass}>
                   Garden
                 </Link>
-                <Link to="#" className={linkClass}>
-                  Belts
-                </Link>
               </nav>
             </div>
 
@@ -72,7 +69,7 @@ const Footer = () => {
               <nav className="flex flex-col space-y-3">
                 <a
                   href="mailto:hello@konceptagency.co.za"
-                  className="flex items-center text-sm text-black group hover:text-red-600 duration-200"
+                  className="flex items-center text-sm text-white group hover:text-red-600 duration-200"
                 >
                   <BsEnvelopeAt className="size-4 mr-2 text-red-600" />
                   <span className="group-hover:text-red-600 duration-200">
@@ -81,7 +78,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="#"
-                  className="flex items-center text-sm text-black group hover:text-red-600 duration-200"
+                  className="flex items-center text-sm text-white group hover:text-red-600 duration-200"
                 >
                   <FiPhoneCall className="size-4 mr-2 text-red-600" />
                   <span className="group-hover:text-red-600 duration-200">
@@ -92,7 +89,7 @@ const Footer = () => {
                   <a
                     href="#"
                     target="_blank"
-                    className="text-black hover:text-red-600 duration-200"
+                    className="text-white hover:text-red-600 duration-200"
                   >
                     <svg
                       fill="currentColor"
@@ -108,7 +105,7 @@ const Footer = () => {
                   <a
                     href="#"
                     target="_blank"
-                    className="text-black hover:text-red-600 duration-200"
+                    className="text-white hover:text-red-600 duration-200"
                   >
                     <svg
                       fill="none"
@@ -137,9 +134,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="bg-white border-t border-gray-200">
+        <div className="bg-black  border-t border-gray-200">
           <div className="mx-auto px-4 py-4">
-            <p className="text-sm text-black text-center">
+            <p className="text-sm text-white text-center">
               &copy; 2025 PestXperts. All Rights Reserved.
             </p>
           </div>
