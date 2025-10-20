@@ -6,8 +6,6 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import PestControl from './Pages/Services/pest-control';
-//import HygieneControl from './Pages/Services/HygieneControl';
-
 
 function App() {
   return (
@@ -17,14 +15,19 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* Pest Control route */}
-        <Route path="Pages/Services/pest-control" element={<PestControl />} />
-        {/* <Route path="/services/hygiene-control" element={<HygieneControl />} /> */}
-        
+
+        {/* Services */}
+        <Route path="/services/pest-control" element={<PestControl />} />
+        <Route path="/services/fire-risk-consulting" element={
+          <div className="p-8">
+            <h1 className="text-3xl font-bold">Fire Risk Consulting</h1>
+            <p className="mt-4">This is the Fire Risk Consulting service page.</p>
+          </div>
+        } />
       </Routes>
       <Footer />
     </>
   );
 }
 
-export default App
+export default App;
