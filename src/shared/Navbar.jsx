@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaHome, FaInfoCircle, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { GiSharkFin } from "react-icons/gi";
 
@@ -19,23 +20,21 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex md:space-x-8 md:items-center">
-          {/* Home */}
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center space-x-2 text-red-600 font-semibold hover:text-red-700 transition-colors"
           >
             <FaHome />
             <span>Home</span>
-          </a>
+          </Link>
 
-          {/* About Us */}
-          <a
-            href="/About"
+          <Link
+            to="/about"
             className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 transition-colors"
           >
             <FaInfoCircle />
             <span>About Us</span>
-          </a>
+          </Link>
 
           {/* Services Dropdown */}
           <div
@@ -52,35 +51,34 @@ export default function Navbar() {
                 isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
               }`}
             >
-              <a
-                href="/Services/pest-control.jsx"
+              <Link
+                to="/services/pest-control"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Pest control
-              </a>
-              <a
-                href="/Services/hygienecontrol.jsx"
+              </Link>
+              <Link
+                to="/services/hygiene-control"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Hygiene control
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/services/fire-risk-consulting"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Fire Risk Consulting
-              </a>
+              </Link>
             </div>
           </div>
 
-          {/* Contact Us */}
-          <a
-            href="/Contact"
+          <Link
+            to="/contact"
             className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 transition-colors"
           >
             <FaEnvelope />
             <span>Contact Us</span>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -108,25 +106,23 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col pt-20 px-6 space-y-6">
-          {/* Home */}
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center space-x-3 text-red-600 font-semibold hover:text-red-700 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <FaHome size={20} />
             <span>Home</span>
-          </a>
+          </Link>
 
-          {/* About Us */}
-          <a
-            href="/About"
+          <Link
+            to="/about"
             className="flex items-center space-x-3 text-gray-900 font-semibold hover:text-red-700 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <FaInfoCircle size={20} />
             <span>About Us</span>
-          </a>
+          </Link>
 
           {/* Services - Mobile */}
           <div>
@@ -142,39 +138,38 @@ export default function Navbar() {
                 isMobileServicesOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <a
-                href="#"
+              <Link
+                to="/services/pest-control"
                 className="block py-2 text-gray-700 hover:text-red-700 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Pest control
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/services/hygiene-control"
                 className="block py-2 text-gray-700 hover:text-red-700 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Hygiene control
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/services/fire-risk-consulting"
                 className="block py-2 text-gray-700 hover:text-red-700 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Fire Risk Consulting
-              </a>
+              </Link>
             </div>
           </div>
 
-          {/* Contact Us */}
-          <a
-            href="/Contact"
+          <Link
+            to="/contact"
             className="flex items-center space-x-3 text-gray-900 font-semibold hover:text-red-700 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <FaEnvelope size={20} />
             <span>Contact Us</span>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
