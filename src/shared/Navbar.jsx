@@ -59,7 +59,7 @@ export default function Navbar() {
                 Pest control
               </a>
               <a
-                href="#"
+                href="/Services/PestControl.jsx"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Hygiene control
