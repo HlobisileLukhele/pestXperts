@@ -53,13 +53,13 @@ export default function Navbar() {
               }`}
             >
               <a
-                href="#"
+                href="/Services/pest-control.jsx"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Pest control
               </a>
               <a
-                href="/Services/PestControl.jsx"
+                href="/Services/hygienecontrol.jsx"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
                 Hygiene control
