@@ -14,7 +14,7 @@ const CallToAction = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug text-black">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug text-[#013c15]">
             Your total <span className="text-red-600">pest</span> <br />
             management solution
           </h2>
@@ -30,7 +30,7 @@ const CallToAction = () => {
             href="/services"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-block border-2 border-red-600 text-red-600 font-semibold px-8 py-3 rounded-xl hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
+            className="inline-block border-2 bg-[#013c15] text-white font-semibold px-8 py-3 rounded-xl hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
           >
             View Service Catalogue
           </motion.a>
