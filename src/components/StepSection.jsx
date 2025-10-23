@@ -24,12 +24,12 @@ const steps = [
 
 const StepsSection = () => {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white mb-10 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-black">
+        <h2 className="text-4xl font-extrabold text-[#013c15]">
           Our 3-Step Process
         </h2>
-        <p className="text-red-500 mt-3 mb-12 text-lg">
+        <p className="text-grey-800 mt-3 mb-12 text-lg">
           A simple and efficient process designed for peace of mind.
         </p>
 
@@ -58,14 +58,14 @@ const StepsSection = () => {
               </div>
 
               {/* Step Number */}
-              <span className="absolute top-6 left-6 text-black text-7xl font-extrabold  group-hover:text-black transition-colors duration-500">
+              <span className="absolute top-6 left-6 text-[#013c15] text-7xl font-extrabold  group-hover:text-[#013c15] transition-colors duration-500">
                 {index + 1}
               </span>
 
               {/* Title + Description */}
               <h3
                 className="
-                  text-2xl font-semibold mb-3 text-red-600 group-hover:text-red
+                  text-2xl font-bold mb-3 text-[#013c15] group-hover:text-red
                   transition-colors duration-500
                 "
               >
@@ -73,7 +73,7 @@ const StepsSection = () => {
               </h3>
               <p
                 className="
-                  text-gray-600 group-hover:text-black leading-relaxed
+                  text-gray-800 group-hover:text-black leading-relaxed
                   transition-colors duration-500
                 "
               >

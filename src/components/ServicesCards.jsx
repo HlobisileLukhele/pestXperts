@@ -56,7 +56,7 @@ const ServicesCards = () => {
       className="bg-white py-2 px-6" // White background with padding
       aria-label="Our Services" // Accessibility: descriptive label for screen readers
     >
-        <h2 className="text-4xl font-extrabold text-black text-center mb-8">
+        <h2 className="text-4xl font-extrabold text-[#013c15] text-center mb-8">
           Our Services 
         </h2>
       <div
@@ -71,10 +71,10 @@ const ServicesCards = () => {
           <div
             key={index}
             className="
-              bg-black text-white rounded-2xl p-8 
+              bg-white text-[#013c15] font-medium rounded-2xl p-8 
               shadow-lg transition-all duration-300 
               hover:border-2 hover:border-red-600 hover:shadow-xl 
-              group
+              group border border-[#013c15]
             "
           >
             <div className="flex flex-col items-center text-center space-y-4">
@@ -91,10 +91,10 @@ const ServicesCards = () => {
               </div>
 
               {/* Service title */}
-              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <h3 className="text-xl text-[#013c15] font-bold">{service.title}</h3>
 
               {/* Service description */}
-              <p className="text-gray-300 text-sm">{service.description}</p>
+              <p className="text-gray-700 text-sm">{service.description}</p>
             </div>
           </div>
         ))}
