@@ -7,13 +7,13 @@ export default function HeroSection() {
         
         {/* Left Side: Text */}
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#013c15] leading-tight">
             Protecting Homes & Businesses with{" "}
             <span className="text-red-600">Expert Pest Control</span>
           </h1>
 
-          <p className="text-lg text-gray-700">
-            At <span className="font-semibold text-red-600">pestXperts</span>, we provide reliable, 
+          <p className="text-lg text-gray-800">
+            At <span className="font-medium bold text-red-600">pestXperts</span>, we provide reliable, 
             eco-friendly solutions to keep your space clean, safe, 
             and pest-free. From homes to offices, we’ve got you covered.
           </p>
@@ -21,7 +21,7 @@ export default function HeroSection() {
           <div>
             <a
               href="#services"
-              className="inline-block px-6 py-3 text-lg font-semibold text-white bg-red-600 rounded-xl shadow-md hover:bg-red-700 transition-colors duration-300"
+              className="inline-block px-6 py-3 text-lg font-semibold text-white bg-[#013c15] rounded-xl shadow-md hover:bg-red-700 transition-colors duration-300"
             >
               Get a Free Quote
             </a>
