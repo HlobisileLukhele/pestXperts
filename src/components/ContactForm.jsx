@@ -12,14 +12,14 @@ export default function ContactForm() {
         
         {/* Contact Form */}
         <div className="bg-gray-40 p-6 rounded-2xl shadow-md">
-          <h2 className="text-black text-xl font-semibold mb-4">Contact Form</h2>
+          <h2 className="text-[black] text-xl font-semibold mb-4">Contact Form</h2>
           <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
 
             {/* Name input field */}
             <input
               type="text"
               placeholder="Name"
-              className="w-full p-3 rounded border bg-white border-red-600 focus:outline-[#7c8c7d]"
+              className="w-full p-3 rounded border bg-white border-[#013c15] focus:outline-[#7c8c7d]"
               {...register("name", { required: true })}
             />
             {errors.name && <span className="text-red-500">Name is required</span>}
@@ -28,7 +28,7 @@ export default function ContactForm() {
             <input
               type="email"
               placeholder="Email"
-              className="w-full p-3 rounded border bg-white border-red-600 focus:outline-[#7c8c7d]"
+              className="w-full p-3 rounded border bg-white border-[#013c15] focus:outline-[#7c8c7d]"
               {...register("email", {
                 required: true,
                 pattern: {
@@ -43,7 +43,7 @@ export default function ContactForm() {
             <input
               type="number"
               placeholder="Number"
-              className="w-full p-3 rounded border bg-white border-red-600 focus:outline-[#7c8c7d]"
+              className="w-full p-3 rounded border bg-white border-[#013c15] focus:outline-[#7c8c7d]"
               {...register("number", {
                 required: true,
                 pattern: {
@@ -58,7 +58,7 @@ export default function ContactForm() {
             <textarea
               rows="4"
               placeholder="Message"
-              className="w-full p-3 rounded bg-white border border-red-600 focus:outline-red-800"
+              className="w-full p-3 rounded bg-white border border-[#013c15] focus:outline-red-800"
               {...register("message", { required: true })}
             ></textarea>
             {errors.message && (
@@ -68,7 +68,7 @@ export default function ContactForm() {
             {/* Submit button */}
             <button
               type="submit"
-              className="bg-red-600 text-white px-5 py-2 rounded hover:bg-white hover:text-red-600 transition duration-300 border border-red-600 hover:border-red-600 font-semibold"
+              className="bg-[#013c15] text-white px-5 py-2 rounded hover:bg-white hover:text-red-600 transition duration-300 border border-[#013c15] hover:border-red-600 font-semibold"
             >
               Send Message
             </button>
