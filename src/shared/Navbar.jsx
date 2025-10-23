@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHome, FaInfoCircle, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { GiSharkFin } from "react-icons/gi";
+import Logo from "../assets/pestXpert-Logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +13,8 @@ export default function Navbar() {
     <nav className="bg-white shadow-sm relative w-full">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="flex items-center z-50">
-          <span className="text-2xl font-extrabold text-red-700 tracking-tight">
-            pest<span className="text-gray-800">Xperts</span>
-          </span>
-        </div>
+        <img className="h-15 w-20" src={Logo} alt="pestXperts Logo" />
+        
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex md:space-x-8 md:items-center">
@@ -61,13 +59,13 @@ export default function Navbar() {
                 to="/services/hygiene-control"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
-                Hygiene control
+                Furmigation
               </Link>
               <Link
                 to="/services/fire-risk-consulting"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
               >
-                Fire Risk Consulting
+                Termite Control
               </Link>
             </div>
           </div>
