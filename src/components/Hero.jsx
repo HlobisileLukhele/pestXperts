@@ -1,4 +1,5 @@
 import React from "react";
+import disinfecting from "../Images/disinfecting.jpg";
 
 export default function HeroSection() {
   return (
@@ -30,9 +31,9 @@ export default function HeroSection() {
 
         {/* Right Side: Image */}
         <div className="flex justify-center md:justify-end">
-          <div className="w-full h-64 md:h-80 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center text-gray-500 overflow-hidden">
+          <div className="w-full h-64 md:h-80 bg-gray-100 rounded-xl flex items-center justify-center text-gray-500 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1581093588401-5f4a3b3c6f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              src={disinfecting}
               alt="Pest control expert disinfecting building"
               className="object-cover w-full h-full rounded-xl"
             />

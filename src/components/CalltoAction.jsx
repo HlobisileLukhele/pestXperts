@@ -1,6 +1,6 @@
-
 import React from "react";
 import { motion } from "framer-motion";
+import disinfecting2 from "../Images/disinfecting2.jpg";
 
 const CallToAction = () => {
   return (
@@ -45,7 +45,7 @@ const CallToAction = () => {
           className="flex justify-center"
         >
           <img
-            src="https://images.unsplash.com/photo-1609347685618-8fdf3b4c7ff9?auto=format&fit=crop&w=900&q=80"
+            src={disinfecting2}
             alt="Dead cockroach symbolizing pest elimination"
             className="w-full max-w-md md:max-w-lg object-contain rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
           />

@@ -12,11 +12,12 @@ import {
   FaBullseye 
 } from "react-icons/fa";
 import Complaince from "../components/Complaince";
+import virus from "../Images/virus.jpg";
 
 const AboutSection = () => {
   return (
     <section className="bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-4">
         {/* LEFT COLUMN - TEXT */}
         <div className="text-left space-y-6">
           {/* Section Heading */}
@@ -43,7 +44,7 @@ const AboutSection = () => {
         {/* RIGHT COLUMN - IMAGE */}
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1581594549598-4b51c8b8e8b7?auto=format&fit=crop&w=800&q=80"
+            src={virus}
             alt="Pest control expert at work"
             className="rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500 w-full max-w-md"
           />
