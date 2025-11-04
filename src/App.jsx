@@ -18,12 +18,8 @@ function App() {
 
         {/* Services */}
         <Route path="/services/pest-control" element={<PestControl />} />
-        <Route path="/services/fire-risk-consulting" element={
-          <div className="p-8">
-            <h1 className="text-3xl font-bold">Fire Risk Consulting</h1>
-            <p className="mt-4">This is the Fire Risk Consulting service page.</p>
-          </div>
-        } />
+        <Route path="/services/furmigation" element={<Furmigation />} />
+        <Route path="/services/termite-control" element={<TermiteControl />} />   
       </Routes>
       <Footer />
     </>
