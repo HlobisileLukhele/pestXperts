@@ -89,7 +89,7 @@ export default function PestControl() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-4xl font-bold text-[#013c15]">
           Our <span className="text-red-600">Pest Control</span> Services
         </h2>
         <p className="text-gray-600 mt-3 text-lg max-w-2xl mx-auto">
@@ -122,12 +122,11 @@ export default function PestControl() {
 
       {/* 💬 Reviews Section */}
       <motion.div
-        className="max-w-3xl mx-auto bg-red-50 rounded-xl shadow-lg p-10 text-center relative"
+        className="max-w-6xl mx-auto bg-red-50 rounded-xl shadow-lg p-10 text-center relative"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <FaQuoteLeft className="text-red-600 text-4xl mx-auto mb-4" />
         <p className="text-gray-700 italic text-lg">
           "{reviews[currentReview].review}"
         </p>
