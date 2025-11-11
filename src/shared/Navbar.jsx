@@ -13,14 +13,15 @@ export default function Navbar() {
     <nav className="bg-white shadow-sm relative w-full">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <img className="h-15 w-20" src={Logo} alt="pestXperts Logo" />
-        
+       <div className="bg-white text-white p-2 rounded-lg">
+         <img className="h-12 w-13" src={Logo} alt="pestXperts Logo" />
+        </div>        
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex md:space-x-8 md:items-center">
           <Link
             to="/"
-            className="flex items-center space-x-2 text-red-600 font-semibold hover:text-red-700 transition-colors"
+            className="flex items-center space-x-2 text-red-600 font-semibold hover:text-red-700 active:text-#013c15 transition-colors"
           >
             <FaHome />
             <span>Home</span>
@@ -28,7 +29,7 @@ export default function Navbar() {
 
           <Link
             to="/about"
-            className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 transition-colors"
+            className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 active:text-#013c15 transition-colors"
           >
             <FaInfoCircle />
             <span>About Us</span>
@@ -40,7 +41,7 @@ export default function Navbar() {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
           >
-            <button className="flex items-center space-x-2 text-gray-800 font-semibold hover:text-red-700 transition-colors">
+            <button className="flex items-center space-x-2 text-gray-800 font-semibold hover:text-red-700 active:text-#013c15  transition-colors">
               <GiSharkFin />
               <span>Services</span>
             </button>
@@ -51,19 +52,19 @@ export default function Navbar() {
             >
               <Link
                 to="/services/pest-control"
-                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
+                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 active:text-#013c15  transition-colors"
               >
                 Pest control
               </Link>
               <Link
-                to="/services/hygiene-control"
-                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
+                to="/services/furmigation"
+                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 active:text-#013c15  transition-colors"
               >
                 Furmigation
               </Link>
               <Link
-                to="/services/fire-risk-consulting"
-                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 transition-colors"
+                to="/services/termite-control"
+                className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-700 active:text-#013c15  transition-colors"
               >
                 Termite Control
               </Link>
@@ -72,7 +73,7 @@ export default function Navbar() {
 
           <Link
             to="/contact"
-            className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 transition-colors"
+            className="flex items-center space-x-2 text-gray-900 font-semibold hover:text-red-700 active:text-#013c15  transition-colors"
           >
             <FaEnvelope />
             <span>Contact Us</span>
@@ -144,18 +145,18 @@ export default function Navbar() {
                 Pest control
               </Link>
               <Link
-                to="/services/hygiene-control"
+                to="/services/furmigation"
                 className="block py-2 text-gray-700 hover:text-red-700 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Hygiene control
+                Fumigation
               </Link>
               <Link
-                to="/services/fire-risk-consulting"
+                to="/services/termite-control"
                 className="block py-2 text-gray-700 hover:text-red-700 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Fire Risk Consulting
+                Termite Control
               </Link>
             </div>
           </div>
