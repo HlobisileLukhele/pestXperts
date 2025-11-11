@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import PestControl from './Pages/Services/pest-control';
+import Furmigation from './Pages/Services/Furmigation';
+import TermiteControl from './Pages/Services/TermiteControl';
 
 function App() {
   return (
