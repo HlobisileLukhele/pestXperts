@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Fumigation() {
   return (
-    <section className="bg-white text-gray-900 py-20 px-6 md:px-16 lg:px-24">
+    <section className="bg-white text-gray-900 py-10 px-6 md:px-16 lg:px-24">
       
       {/* Header */}
       <motion.div
@@ -23,7 +23,7 @@ export default function Fumigation() {
 
       {/* Image + Text Section */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20"
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
