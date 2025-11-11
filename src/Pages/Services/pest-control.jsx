@@ -170,7 +170,7 @@ export default function PestControl() {
 
                   {/*eco-friendly */}
       <div className="py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-10 items-center">
 
           <div>
             <h3 className="text-3xl font-bold text-[#013c15] mb-4">
