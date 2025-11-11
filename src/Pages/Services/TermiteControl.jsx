@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaBug } from "react-icons/fa";
+import disinfecting2 from "../../Images/disinfecting2.jpg";
 
   export default function TermiteControl() {
   return (
@@ -28,13 +29,13 @@ import { FaBug } from "react-icons/fa";
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/*
+        
           <img
-            src="https://images.pexels.com/photos/9705053/pexels-photo-9705053.jpeg"
+            src={disinfecting2}
             alt="Termite Inspection"
             className="rounded-xl shadow-lg object-cover w-full"
           />
-        */}
+        
 
         <div>
           <h3 className="text-2xl font-semibold text-[#013c15] mb-4">
