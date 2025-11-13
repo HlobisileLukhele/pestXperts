@@ -9,8 +9,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import Logo from "../assets/pestXpert-Logo.png";
-
-
+ 
 export default function Footer() {
   return (
     <footer className="bg-[#0f172a] text-gray-300 py-12 px-6 md:px-16 lg:px-24">

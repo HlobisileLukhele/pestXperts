@@ -27,7 +27,7 @@ const CallToAction = () => {
           </p>
 
           <motion.a
-            href="/pest-control"
+             href="/pest-control"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             className="inline-block border-2 bg-[#013c15] text-white font-semibold px-8 py-3 rounded-xl hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
