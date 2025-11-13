@@ -8,7 +8,8 @@ import {
   FaBug,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-
+import Logo from "../assets/pestXpert-Logo.png";
+ 
 export default function Footer() {
   return (
     <footer className="bg-[#0f172a] text-gray-300 py-12 px-6 md:px-16 lg:px-24">
@@ -17,10 +18,10 @@ export default function Footer() {
         {/* Company Info */}
         <div>
           <div className="flex items-center mb-4">
-            <div className="bg-red-600 text-white p-2 rounded-lg">
-              <FaBug className="text-2xl" />
+            <div className="bg-white text-white p-2 rounded-lg">
+         <img className="h-13 w-13" src={Logo} alt="pestXperts Logo" />
+         
             </div>
-            <h2 className="ml-2 text-2xl font-bold text-white">PestXperts</h2>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Keeping homes and businesses pest-free with trusted, professional, and
@@ -33,9 +34,6 @@ export default function Footer() {
             </a>
             <a href="#" className="hover:text-red-600 transition">
               <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-red-600 transition">
-              <FaLinkedinIn />
             </a>
             <a href="#" className="hover:text-red-600 transition">
               <FaInstagram />
@@ -63,14 +61,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/gallery" className="hover:text-red-600 transition">
-                Gallery
-              </a>
+              
             </li>
             <li>
-              <a href="/careers" className="hover:text-red-600 transition">
-                Careers
-              </a>
+          
             </li>
           </ul>
         </div>
@@ -125,7 +119,7 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="text-red-600 mt-1" />
               <span>
-                Johannesburg <br />
+                Durban <br />
                 South Africa
               </span>
             </li>
@@ -142,12 +136,6 @@ export default function Footer() {
           </a>
           <a href="/terms" className="hover:text-red-600 transition">
             Terms of Service
-          </a>
-          <a href="/cookies" className="hover:text-red-600 transition">
-            Cookie Policy
-          </a>
-          <a href="/sitemap" className="hover:text-red-600 transition">
-            Sitemap
           </a>
         </div>
       </div>

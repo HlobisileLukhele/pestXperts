@@ -44,7 +44,7 @@ export default function FAQs() {
       <div className="max-w-5xl mx-auto text-center mb-10">
         <div className="flex justify-center items-center mb-3">
           <FaQuestionCircle className="text-red-600 text-3xl mr-2" />
-          <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-[#013c15]">Frequently Asked Questions</h2>
         </div>
         <p className="text-gray-600 text-lg">
           Find quick answers to the most common questions our clients ask about our pest control services.
@@ -56,7 +56,7 @@ export default function FAQs() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-red-200 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md"
+            className="border border-[#013c15] rounded-xl shadow-sm transition-all duration-300 hover:shadow-md"
           >
             {/* Question */}
             <button

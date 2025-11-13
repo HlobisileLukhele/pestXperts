@@ -1,6 +1,6 @@
-
 import React from "react";
 import { motion } from "framer-motion";
+import disinfecting2 from "../Images/disinfecting2.jpg";
 
 const CallToAction = () => {
   return (
@@ -14,7 +14,7 @@ const CallToAction = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug text-black">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug text-[#013c15]">
             Your total <span className="text-red-600">pest</span> <br />
             management solution
           </h2>
@@ -27,10 +27,10 @@ const CallToAction = () => {
           </p>
 
           <motion.a
-            href="/services"
+             href="/pest-control"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-block border-2 border-red-600 text-red-600 font-semibold px-8 py-3 rounded-xl hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
+            className="inline-block border-2 bg-[#013c15] text-white font-semibold px-8 py-3 rounded-xl hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
           >
             View Service Catalogue
           </motion.a>
@@ -45,7 +45,7 @@ const CallToAction = () => {
           className="flex justify-center"
         >
           <img
-            src="https://images.unsplash.com/photo-1609347685618-8fdf3b4c7ff9?auto=format&fit=crop&w=900&q=80"
+            src={disinfecting2}
             alt="Dead cockroach symbolizing pest elimination"
             className="w-full max-w-md md:max-w-lg object-contain rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
           />
