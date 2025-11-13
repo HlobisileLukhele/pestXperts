@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* Pest Control route */}
-        <Route path="Pages/Services/pest-control" element={<PestControl />} />
+        <Route path="/services/pest-control" element={<PestControl />} />
         {/* <Route path="/services/hygiene-control" element={<HygieneControl />} /> */}
         
       </Routes>
