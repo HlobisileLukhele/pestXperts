@@ -1,7 +1,7 @@
 import CalltoAction from '../components/CalltoAction.jsx';
 import Hero from '../components/Hero.jsx';
-import ServicesCards from '../components/servicesCards.jsx';
-import StepsSection from '../components/StepSection.jsx';
+import ServicesCards from '../components/ServicesCards.jsx';
+import StepSection from '../components/StepSection.jsx'; // corrected import
 
 function Home() {
   return (
@@ -9,8 +9,9 @@ function Home() {
       <Hero />
       <ServicesCards />
       <CalltoAction />
-      <StepsSection />
+      <StepSection />
     </div>
   );
 }
+
 export default Home;
