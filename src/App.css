@@ -1,5 +1,9 @@
-@import "tailwindcss";
+/* Tailwind core directives MUST come first */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Your custom styles */
 body {
   margin: 0;
   display: flex;
@@ -8,4 +12,5 @@ body {
   min-height: 100vh;
   background-color: #fff;
   color: black;
+  font-family: 'Inter', sans-serif;
 }
